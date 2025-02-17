@@ -1,10 +1,11 @@
 import "./App.css";
-import TaskList from "../components/taskList";
+import HomePage from "./components/homePage";
 
 function App() {
   return (
     <div>
-      <TaskList />
+      {/* <TaskList /> */}
+      <HomePage />
     </div>
   );
 }
