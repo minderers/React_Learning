@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- CDN引入，依赖三个包：react、react-dom、babel -->
+    <script crossorigin src="./lib/react.js"></script>
+    <script crossorigin src="./lib//react-dom.js"></script>
+    <script src="./lib/babel.js"></script>
+
+    <script type="text/babel">
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+      let count = 0; // 点击次数
+      let colorIndex = 0; // 当前颜色索引
+
+      // 定义颜色数组
+      const styles = [
+        { color: "black" },
+        { color: "red" },
+        { color: "orange" },
+        { color: "yellow" },
+        { color: "green" },
+        { color: "blue" },
+        { color: "indigo" },
+        { color: "violet" },
+      ];
+
+      const btnClick = () => {
+        count++; // 点击次数加1
+        colorIndex = (colorIndex + 1) % styles.length; // 循环切换颜色索引
+        rootRender();
+      };
+
+      const rootRender = () => {
+        root.render(
+          <div>
+            <h2 style={styles[colorIndex]}>你已经点击了{count}次</h2>
+            <button onClick={btnClick}>点击切换颜色 🌈</button>
+            {count >= 10 && (
+              <div className="achievement">恭喜你发现了隐藏成就!</div>
+            )}
+          </div>
+        );
+      };
+      rootRender();
+    </script>
+  </body>
+</html>
