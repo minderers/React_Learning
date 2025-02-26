@@ -1,6 +1,6 @@
 .card {
   background-color: white;
-  height: 400px;
+  height: 450px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   width: 310px;
   margin: 5px;
@@ -39,4 +39,23 @@
 .card:hover {
   transform: translateY(-5px); /* 悬停时稍微上移 */
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* 更深的阴影 */
+}
+/* BookItem.css */
+.card-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card-actions button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #c1a4ff;
+  color: white;
+}
+
+.card-actions button:nth-child(2) {
+  margin-left: 10px;
+  background-color: #c1a4ff;
+  color: white;
 }

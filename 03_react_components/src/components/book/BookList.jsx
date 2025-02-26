@@ -1,8 +1,7 @@
-// BookList.jsx
 import BookItem from "./BookItem";
 import "./book.css";
 
-const BookList = ({ books, onDetailClick }) => {
+const BookList = ({ books, onDetailClick, onEditClick, onDelete }) => {
   return (
     <div className="bookList">
       {books.map((book, index) => (
@@ -13,6 +12,8 @@ const BookList = ({ books, onDetailClick }) => {
           authorSlot={`作者: ${book.author}`}
           publisherSlot={`出版社: ${book.publisher}`}
           onDetailClick={() => onDetailClick(book)}
+          onEditClick={() => onEditClick(book)}
+          onDelete={() => onDelete(book)}
         />
       ))}
     </div>
