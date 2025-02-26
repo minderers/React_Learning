@@ -1,0 +1,87 @@
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8ff; /* 背景色 */
+  color: #333; /* 文字颜色 */
+}
+
+/* 表单容器 */
+.book-input-container {
+  background: #ffffff; /* 白色背景 */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px; /* 宽度 */
+  max-width: 90%; /* 自适应宽度 */
+  margin: 0 auto; /* 居中 */
+}
+
+/* 表单标题 */
+h3 {
+  color: #6a1b9a; /* 紫色标题 */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* 输入框 */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #7c4dff; /* 紫色焦点边框 */
+  outline: none;
+}
+
+/* 按钮样式 */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #6a1b9a; /* 紫色保存按钮 */
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #512da8; /* 深紫色悬停效果 */
+}
+
+button[type="button"] {
+  background-color: #d1c4e9; /* 浅紫色取消按钮 */
+  color: #333;
+  margin-left: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #b39ddb; /* 浅紫色悬停效果 */
+}
+
+/* 遮罩层 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.btn {
+  text-align: center;
+}

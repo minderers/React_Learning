@@ -1,0 +1,30 @@
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner {
+  background-color: #9c70fa;
+  padding: 10px 20px;
+  height: 80px;
+  color: #fff;
+  .title {
+    margin-right: 800px;
+    font-size: 36px;
+  }
+  .setting {
+    .btn {
+      background-color: #c1a4ff;
+      border: 1px solid #c1a4ff;
+      border-radius: 4px;
+      font-size: 20px;
+      color: #fff;
+      padding: 5px 10px;
+    }
+  }
+}
+.bookList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 30px;
+}
