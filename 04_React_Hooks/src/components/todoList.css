@@ -1,0 +1,54 @@
+/* ToDoList.css */
+.ToDoList {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.ListBox .input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ListBox .input input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ListBox .input button {
+  background-color: #9999ff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.List div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.List .completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.List button {
+  background-color: #9999ff;
+  color: #fff;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.List .delete-button {
+  background-color: #ff6347;
+}
