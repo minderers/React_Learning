@@ -1,0 +1,47 @@
+/* 设置导航栏的基础样式 */
+nav {
+  background-color: #7799cc; /* 导航栏背景颜色保持深色以突出链接 */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  .name {
+    margin-left: 10px;
+    color: #fff;
+  }
+}
+
+/* 定义链接的基本外观 */
+nav a {
+  color: #ccddff; /* 主色调：文本颜色 */
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 当前激活链接的特殊样式 */
+nav .active {
+  background-color: #88aadd; /* 激活链接的背景颜色，比主色调稍暗 */
+  color: #ffffff; /* 文本颜色设置为白色以增加对比度 */
+  font-weight: bold; /* 可选项：使激活链接字体加粗 */
+}
+
+/* 悬停时的效果 */
+nav a:hover {
+  background-color: #7799cc; /* 鼠标悬停时的背景颜色，比主色调更深 */
+  color: #ffffff; /* 鼠标悬停时的文本颜色设置为白色 */
+}
+
+/* 可选：增加一些额外的样式来增强视觉效果 */
+nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+}
