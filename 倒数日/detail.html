@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>倒数日 - 详情</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: #f0f2f5;
+      }
+      .mockup-container {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .mockup-container::-webkit-scrollbar {
+        display: none;
+      }
+      .glass-effect {
+        backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.7);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen p-8">
+    <div class="mockup-container flex gap-8 p-4">
+      <!-- 事件详情页面 -->
+      <div
+        class="flex-none w-[360px] h-[640px] rounded-[32px] border-8 border-gray-900 relative overflow-hidden bg-white"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="background"
+        />
+        <div class="relative h-full glass-effect">
+          <div class="p-6 flex flex-col h-full">
+            <div class="flex items-center justify-between mb-6">
+              <button class="p-2 rounded-full bg-white/80 shadow-lg">
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/arrow-left.svg"
+                  class="w-6 h-6"
+                  alt="back"
+                />
+              </button>
+              <button class="p-2 rounded-full bg-white/80 shadow-lg">
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/more-horizontal.svg"
+                  class="w-6 h-6"
+                  alt="more"
+                />
+              </button>
+            </div>
+            <div
+              class="flex-1 flex flex-col items-center justify-center text-center space-y-4"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-white/80 shadow-lg flex items-center justify-center mb-4"
+              >
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/calendar.svg"
+                  class="w-10 h-10"
+                  alt="calendar"
+                />
+              </div>
+              <h1 class="text-3xl font-bold text-gray-800">毕业典礼</h1>
+              <p class="text-lg text-gray-600">2024年6月15日</p>
+              <div class="mt-8">
+                <span class="text-6xl font-bold text-indigo-600">128</span>
+                <p class="text-xl text-gray-600 mt-2">天</p>
+              </div>
+            </div>
+            <div class="mt-auto space-y-4">
+              <button
+                class="w-full py-3 px-4 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 flex items-center justify-center gap-2"
+              >
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/share-2.svg"
+                  class="w-5 h-5"
+                  alt="share"
+                />
+                分享
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 分享预览页面 -->
+      <div
+        class="flex-none w-[360px] h-[640px] rounded-[32px] border-8 border-gray-900 relative overflow-hidden bg-white"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="background"
+        />
+        <div class="relative h-full glass-effect">
+          <div class="p-6 flex flex-col h-full">
+            <div
+              class="flex-1 flex flex-col items-center justify-center text-center space-y-4"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-white/80 shadow-lg flex items-center justify-center mb-4"
+              >
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/calendar.svg"
+                  class="w-10 h-10"
+                  alt="calendar"
+                />
+              </div>
+              <h1 class="text-3xl font-bold text-gray-800">毕业典礼</h1>
+              <p class="text-lg text-gray-600">2024年6月15日</p>
+              <div class="mt-8">
+                <span class="text-6xl font-bold text-indigo-600">128</span>
+                <p class="text-xl text-gray-600 mt-2">天</p>
+              </div>
+              <div class="mt-8 text-sm text-gray-500">
+                <p>长按保存图片或扫描二维码</p>
+                <p>下载倒数日App</p>
+              </div>
+            </div>
+            <div class="mt-auto flex justify-center">
+              <div
+                class="w-32 h-32 bg-white/80 rounded-xl shadow-lg flex items-center justify-center"
+              >
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/qr-code.svg"
+                  class="w-24 h-24"
+                  alt="qr-code"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

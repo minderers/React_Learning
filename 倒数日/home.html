@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>倒数日 - 首页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: #f0f2f5;
+      }
+      .mockup-container {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .mockup-container::-webkit-scrollbar {
+        display: none;
+      }
+      .glass-effect {
+        backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.7);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen p-8">
+    <div class="mockup-container flex gap-8 p-4">
+      <!-- 首页列表视图 -->
+      <div
+        class="flex-none w-[360px] h-[640px] rounded-[32px] border-8 border-gray-900 relative overflow-hidden bg-white"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="background"
+        />
+        <div class="relative h-full glass-effect">
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+              <h1 class="text-2xl font-bold text-gray-800">我的倒数日</h1>
+              <button class="p-2 rounded-full bg-white/80 shadow-lg">
+                <img
+                  src="https://unpkg.com/lucide-static@latest/icons/plus.svg"
+                  class="w-6 h-6"
+                  alt="add"
+                />
+              </button>
+            </div>
+            <div class="space-y-4">
+              <div class="p-4 rounded-2xl bg-white/80 shadow-lg">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-800">
+                      毕业典礼
+                    </h3>
+                    <p class="text-sm text-gray-600">2024年6月15日</p>
+                  </div>
+                  <span class="text-3xl font-bold text-indigo-600">128</span>
+                </div>
+                <div class="mt-2 flex items-center text-sm text-gray-500">
+                  <img
+                    src="https://unpkg.com/lucide-static@latest/icons/calendar.svg"
+                    class="w-4 h-4 mr-1"
+                    alt="calendar"
+                  />
+                  <span>还剩天数</span>
+                </div>
+              </div>
+              <div class="p-4 rounded-2xl bg-white/80 shadow-lg">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-800">生日</h3>
+                    <p class="text-sm text-gray-600">2024年3月1日</p>
+                  </div>
+                  <span class="text-3xl font-bold text-pink-600">22</span>
+                </div>
+                <div class="mt-2 flex items-center text-sm text-gray-500">
+                  <img
+                    src="https://unpkg.com/lucide-static@latest/icons/cake.svg"
+                    class="w-4 h-4 mr-1"
+                    alt="cake"
+                  />
+                  <span>还剩天数</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 首页网格视图 -->
+      <div
+        class="flex-none w-[360px] h-[640px] rounded-[32px] border-8 border-gray-900 relative overflow-hidden bg-white"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1518066000714-58c45f1a2c0a"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="background"
+        />
+        <div class="relative h-full glass-effect">
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+              <h1 class="text-2xl font-bold text-gray-800">倒数日</h1>
+              <div class="flex gap-2">
+                <button class="p-2 rounded-full bg-white/80 shadow-lg">
+                  <img
+                    src="https://unpkg.com/lucide-static@latest/icons/layout-grid.svg"
+                    class="w-6 h-6"
+                    alt="grid"
+                  />
+                </button>
+                <button class="p-2 rounded-full bg-white/80 shadow-lg">
+                  <img
+                    src="https://unpkg.com/lucide-static@latest/icons/plus.svg"
+                    class="w-6 h-6"
+                    alt="add"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div
+                class="p-4 rounded-2xl bg-white/80 shadow-lg aspect-square flex flex-col justify-between"
+              >
+                <div class="text-center">
+                  <span class="text-4xl font-bold text-indigo-600">128</span>
+                  <p class="text-sm text-gray-600 mt-1">天</p>
+                </div>
+                <div class="text-center">
+                  <h3 class="text-base font-semibold text-gray-800">
+                    毕业典礼
+                  </h3>
+                  <p class="text-xs text-gray-500">2024年6月15日</p>
+                </div>
+              </div>
+              <div
+                class="p-4 rounded-2xl bg-white/80 shadow-lg aspect-square flex flex-col justify-between"
+              >
+                <div class="text-center">
+                  <span class="text-4xl font-bold text-pink-600">22</span>
+                  <p class="text-sm text-gray-600 mt-1">天</p>
+                </div>
+                <div class="text-center">
+                  <h3 class="text-base font-semibold text-gray-800">生日</h3>
+                  <p class="text-xs text-gray-500">2024年3月1日</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
